@@ -5,4 +5,3 @@
 - Add filmstrip thumbnail strip in video tracks
 - Add track controls: lock, favorite, visibility
 - Improve clip name readability over the filmstrip
-- Release APK is a debug build
