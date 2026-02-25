@@ -1,3 +1,9 @@
+# Unmcrawesome 1.9.5
+
+- Fixed incorrect external storage disconnect warnings for files on internal storage.
+- Improved detection of removable storage disconnects to reduce false alerts.
+- Fixed portrait videos playing in landscape or stretched in the player.
+
 # Unmcrawesome 1.9.4
 
 - Fixed timeline gestures so one-finger timeline scrolling works again while preserving clip long-hold interactions.
