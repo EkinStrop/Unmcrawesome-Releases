@@ -1,3 +1,10 @@
+# Unmcrawesome 1.9.6
+
+- Improved export stability on older Qualcomm devices, especially for H.264/HEVC hardware encoding.
+- Custom H.264 bitrate selection now behaves correctly on affected devices, so high bitrate choices are respected.
+- Reduced background preview-cache interruptions/noise when starting export from the editor.
+- Improved removable storage disconnect handling to prevent preview/frame corruption issues in affected sessions.
+
 # Unmcrawesome 1.9.5
 
 - Fixed incorrect external storage disconnect warnings for files on internal storage.
