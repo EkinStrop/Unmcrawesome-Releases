@@ -1,9 +1,19 @@
-# Unmcrawesome 1.9.6
+# Unmcrawesome 1.9.7
 
 - Improved export stability on older Qualcomm devices, especially for H.264/HEVC hardware encoding.
 - Custom H.264 bitrate selection now behaves correctly on affected devices, so high bitrate choices are respected.
 - Reduced background preview-cache interruptions/noise when starting export from the editor.
 - Improved removable storage disconnect handling to prevent preview/frame corruption issues in affected sessions.
+
+# Unmcrawesome 1.9.6
+
+- Fixed DNG frame export compatibility so files open correctly in Adobe apps like Photoshop/Lightroom.
+- Fixed a color cast in exported DNG frames by correcting raw black/white level metadata.
+- Fixed export job cards showing the wrong resolution after crop/rotation edits.
+- Added aspect ratio display to export job cards so you can see the final editor ratio at a glance.
+- Added a compact Project settings bar in the timeline for quick color profile and frame rate changes.
+- Refined clip/project context menus with tighter sizing to reduce empty space and improve readability.
+- Fixed Export Queue "Edit" routing so timeline exports reopen the timeline project instead of the single-video editor.
 
 # Unmcrawesome 1.9.5
 
