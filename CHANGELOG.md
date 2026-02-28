@@ -1,3 +1,54 @@
+> Important: Transfer and working-space features are still in active development. Please do not report bugs/issues related to these features yet.
+
+# Unmcrawesome 1.9.8
+
+### Added
+
+- Added full project aspect ratio preset selection in New Project, matching the editor crop ratio options.
+- Added live Aspect Ratio switching in Timeline Project settings (alongside color profile and frame rate).
+- Added favorite aspect ratios with a star toggle, and favorites are now remembered app-wide for all projects.
+- Added missing 50 fps and 100 fps frame rate options in project settings.
+- Added right-edge safety padding in timeline tracks to reduce gesture-navigation conflicts near the screen edge.
+- Added live clip reordering while dragging with smoother swap behavior.
+- Added a quick Snap action directly in the timeline bottom bar for faster gap compaction access.
+- Added clip move mode toggle in the timeline bar: Locked for live swap/reorder and Free Move for manual gap creation.
+
+### Added (Work In Progress)
+
+- Added new transfer functions for grading and timeline workflows: Cineon Log, V-Log, DaVinci Intermediate, ACEScct, Canon Log 3, S-Log3, LogC3, F-Log, and Linear.
+- Added matching wide-gamut working spaces: Cineon Film, V-Gamut, DaVinci Wide Gamut, ACES AP1, Cinema Gamut, S-Gamut3, S-Gamut3.Cine, ARRI Wide Gamut, and F-Gamut.
+
+### Changed
+
+- Project aspect ratio now acts as the timeline canvas rule, so clips with different shapes fit inside it instead of being cropped.
+- Timeline and editor preview now better reflect project framing, including expected black bars when needed.
+- Improved first imported clip behavior so project resolution is derived while respecting the chosen project aspect ratio.
+- Removed the custom project aspect ratio option from New Project in favor of the expanded preset list.
+- Improved the Project aspect ratio popup so it stays compact and scrolls instead of expanding across the screen.
+- Redesigned the New Project window to better handle large aspect ratio lists and make setup easier to scan.
+- Increased New Project window width for a less cramped layout.
+- Improved player Calibration UX by replacing the bottom popout with a scrollable context menu from the Calibration button.
+- Improved timeline clip dragging with smarter edge auto-scroll for long timelines.
+- Set clip move mode to default to Locked for new and existing projects.
+- In Free Move, dragging a clip can now create gaps while moving following clips together as a train.
+- Improved lock mode consistency so clips no longer create gaps while in Locked mode.
+- Improved free-move dragging so clips no longer visually jump back before a second drag.
+- Updated locked reordering to preserve existing gaps instead of collapsing clips together.
+- Improved Timeline Project submenu scrolling with a bottom fade cue so it is clearer when more options are available.
+- Improved update-check error reporting so unsupported/strict AOSP network stacks now show actionable failure reasons.
+
+### Fixed
+
+- Fixed an issue where MCRAW video export could fail on some devices with "Failed to open MCRAW metadata".
+- Fixed timeline export sizing so Original follows the project aspect/output framing more reliably.
+- Fixed LUT selection feedback so the currently chosen LUT is also clearly highlighted in the LUT list.
+- Fixed timeline play/pause stutter and startup audio repetition during editor playback.
+- Fixed a project load issue where clips could reopen with an unintended gap at the start of the timeline.
+- Fixed repeated preview cache restart spam after reopening some saved projects, improving timeline stability.
+- Fixed clip drag grip stability so the dragged clip stays aligned with your finger during slow interactions and swaps.
+- Fixed timeline gap preview behavior so empty gaps now display black instead of showing a stale frame from a previous clip.
+- Fixed HEVC 10-bit Rec.2020-10 SDR delivery metadata being signaled as PQ on some devices.
+
 # Unmcrawesome 1.9.7
 
 - Improved export stability on older Qualcomm devices, especially for H.264/HEVC hardware encoding.
