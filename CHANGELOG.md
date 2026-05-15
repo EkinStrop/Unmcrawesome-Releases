@@ -1,3 +1,13 @@
+# Unmcrawesome 2.3.1
+
+## Added
+
+## Changed
+
+## Fixed
+
+- Fixed cropped HEVC 10-bit exports that could freeze on input-buffer devices or squeeze 4:3 footage into 16:9 output on native 10-bit surface devices.
+
 # Unmcrawesome 2.3.0
 
 ## Added
