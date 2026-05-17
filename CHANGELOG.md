@@ -1,3 +1,29 @@
+# Unmcrawesome 2.3.3
+
+## Added
+
+## Changed
+
+- Faster multi-clip timeline exports, especially around clip switches and crossfade transitions. Two source decoders are now kept warm at once and GPU resources are reused across clips.
+
+## Fixed
+
+- Fixed intermittent magenta and green colour fringing on HEVC and H.264 exports, most visible on moving subjects.
+- Fixed timeline exports producing black frames for the entire duration of every crossfade between two clips. All transition types affected.
+- Fixed occasional green/magenta corruption on a single transition frame between two clips of different resolutions.
+
+---
+
+**BUG REPORTS:** Bug reports will only be acknowledged if the issue can be reproduced. A screen recording showing the issue and a logcat capture are both required. Please follow this simple structure:
+
+- Which device are you using?
+- What is happening exactly?
+- Steps to reproduce the issue.
+- Screen recording showing the issue (required).
+- Logcat capture (required, can be captured from Settings).
+
+**ON BUG FIXES & EXPECTATIONS:** Bug fixes are not guaranteed. Android is a jungle with thousands of different devices, and as a solo hobby project there is simply no way for me to address every single device-specific issue. If something can't be fixed on your device, you'll have to live with it.
+
 # Unmcrawesome 2.3.2
 
 ## Added
